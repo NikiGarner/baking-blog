@@ -4,7 +4,7 @@
 
 <ul>
   {{#each model as |posts|}}
-    {{post-tile posts=posts}}
+    {{post-tile posts=posts destroyPosts="destroyPosts"}}
   {{/each}}
 </ul>
 
