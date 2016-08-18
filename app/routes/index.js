@@ -11,6 +11,15 @@ import Ember from 'ember';
       newPost.save();
       this.transitionTo('index');
     },
+    edit(post, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          post.set(key,params[key]);
+        }
+      });
+      post.save();
+      this.transitionTo('index');
+    },
       destroyPost(post) {
         post.destroyRecord();
         this.transitionTo('index');
