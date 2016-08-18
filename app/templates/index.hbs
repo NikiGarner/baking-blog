@@ -3,10 +3,12 @@
 <p>Here are a collection of comfort food recipes that will make a house feel like a home</p>
 
 <ul>
-  {{#each model as |posts|}}
-    {{post-tile posts=posts destroyPosts="destroyPosts"}}
+  {{#each model as |post|}}
+    {{post-tile post=post destroyPost="destroyPost"}}
   {{/each}}
 </ul>
+
+{{new-post save2="save3"}}
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Contact{{/link-to}}

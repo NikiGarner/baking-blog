@@ -6,8 +6,13 @@ import Ember from 'ember';
     },
 
     actions: {
-      destroyPosts(posts) {
-        posts.destroyRecord();
+      save3(params) {
+      var newPost = this.store.createRecord('post', params);
+      newPost.save();
+      this.transitionTo('index');
+    },
+      destroyPost(post) {
+        post.destroyRecord();
         this.transitionTo('index');
       }
     }

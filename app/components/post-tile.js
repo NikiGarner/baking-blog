@@ -3,9 +3,9 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    delete(posts) {
+    delete(post) {
       if (confirm('Are you sure you want to delete this post?')) {
-        this.sendAction( 'destroyPosts', posts);
+        this.sendAction( 'destroyPost', post);
       }
     }
   }
