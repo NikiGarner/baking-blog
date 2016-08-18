@@ -1,0 +1,12 @@
+<h1>Sugar & Spice Blog</h1>
+
+<p>Here are a collection of comfort food recipes that will make a house feel like a home</p>
+
+<ul>
+  {{#each model as |posts|}}
+    <li>{{posts.date}} {{posts.title}} {{posts.time}} {{posts.serving}} {{posts.text}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Contact{{/link-to}}
