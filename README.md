@@ -1,7 +1,6 @@
 # Project-name
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project was during the JavaScript course at Epicodus. The Purpose to create a blog with Ember.
 
 ## Prerequisites
 
